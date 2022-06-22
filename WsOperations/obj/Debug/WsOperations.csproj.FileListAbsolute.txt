@@ -1,0 +1,7 @@
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\bin\WsOperations.dll.config
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\bin\WsOperations.dll
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\bin\WsOperations.pdb
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\obj\Debug\WsOperations.csproj.AssemblyReference.cache
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\obj\Debug\WsOperations.csproj.CoreCompileInputs.cache
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\obj\Debug\WsOperations.dll
+C:\Users\Master\OneDrive\School\CSE_445\WsOperations\obj\Debug\WsOperations.pdb
