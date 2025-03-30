@@ -1,37 +1,54 @@
-# WSDL Parser Service
-![Static Badge](https://img.shields.io/badge/C%23-7.3-%23178600)
-![Static Badge](https://img.shields.io/badge/.NET%20Framework-4.8-%239780E5)
+# 🛠️ WSDL Parser Service
 
-WCF (Windows Communication Foundation) Web Service that parses WSDL documents to retrieve information about the web services they describe.
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-7.3-%23178600">
+  <img src="https://img.shields.io/badge/.NET%20Framework-4.8-%239780E5">
+</p>
 
-## API Reference
-### Get Web Service Operations
-```C#
+This **WCF (Windows Communication Foundation) Web Service** parses **WSDL documents** to extract detailed information about the web services they describe.
+
+## 🚀 API Reference
+
+### 1. Get Web Service Operations
+
+```csharp
 string[] getWsOperations(string url)
 ```
-Returns the **return types**, **operation name**, and **parameter types** for all operations offered by a web service, given the string url of its WSDL document. 
+
+Retrieves an array of operations provided by a web service at the given WSDL URL.  
+The returned data includes each operation’s return types, name, and parameter names and types.
 
 #### Parameters
-- `string url`: The string url of the WSDL interface to parse.
 
-### Get Hashed Web Service Operation Info
-```C#
+- **string url**: The URL of the WSDL interface to parse.
+
+### 2. Get Hashed Web Service Operation Info
+
+```csharp
 Dictionary<string, OperationInfo> getWsHashOperations(string url)
 ```
-Returns a **dictionary** of `OperationInfo` objects keyed by operation name, which store the **operation name**, **input/output** **parameter names**, and **types** for each operation provided by the web service whose WSDL interface is located at the given url string instance.
+
+Returns a **dictionary** mapping operation names to `OperationInfo` objects.  
+Each `OperationInfo` stores the operation name along with its input/output parameter names and types.
 
 #### Parameters
-- `string url`: The string url of the WSDL interface to parse.
 
-### Get Web Service Info
-```C#
+- **string url**: The URL of the WSDL interface to parse.
+
+
+### 3. Get Web Service Info
+
+```csharp
 WebServiceInfo GetWebServiceInfo(string url)
 ```
-Returns a `WebServiceInfo` object, which contains the name and operation information of the web service described by the WSDL interface given.
+
+Retrieves a `WebServiceInfo` object that contains the service name and details about all available operations.
 
 #### Parameters
-- `string url`: The string url of the WSDL interface to parse.
 
-## Credits
+- **string url**: The URL of the WSDL interface to parse.
+
+## 🏆 Credits
+
 - [Hussain Ahamed](http://hussainahamed.blogspot.com/2010/10/reading-wsdl-from-both-webservice-and.html)
 - [Mike Hadlow, *Code Rant*](http://mikehadlow.blogspot.com/2006/06/simple-wsdl-object.html)
